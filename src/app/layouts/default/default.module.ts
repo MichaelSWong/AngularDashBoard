@@ -11,6 +11,7 @@ import {
   MatCardModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, PostsComponent],
@@ -22,6 +23,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatDividerModule,
     MatCardModule,
     FlexLayoutModule
-  ]
+  ],
+  providers: [DashboardService]
 })
 export class DefaultModule {}
