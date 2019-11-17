@@ -12,6 +12,7 @@ import {
   MatListModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
@@ -23,7 +24,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     FlexLayoutModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    RouterModule
   ],
   exports: [HeaderComponent, FooterComponent, SidebarComponent]
 })
